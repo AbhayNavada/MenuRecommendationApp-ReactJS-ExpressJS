@@ -1,0 +1,11 @@
+.top-nav-bar-container {
+  z-index: 99;
+  margin-bottom: 100px;
+}
+
+.content-container {
+  width: 90vw;
+  margin-left: 5vw;
+}
+
+

@@ -1,0 +1,58 @@
+.ai-intro {
+    background-color: bisque;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 150px;
+    font-family: 'Merienda', cursive;
+}
+
+.prefQuestions {
+    background-color: bisque;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 15px;
+    font-family: 'Merienda', cursive;
+}
+
+.prefOptions {
+    background-color: cornsilk;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 15px;
+    font-family: 'Merienda', cursive;
+    right: 0;
+    position: absolute;
+    right: 5vw;
+}
+
+.optionLabels {
+    padding: 8px;
+    font-size: 20px;
+}
+
+.checkBox {
+    margin-right: 10px;
+}
+
+.custom-btn {
+    background-color:bisque;
+    border-radius: 15px;
+    border: none;
+    color: black;
+    margin-top: 210px;
+    font-family: 'Merienda', cursive;
+    padding: 20px;
+}
+
+.custom-final-btn {
+    font-size: 20px;
+    background-color: bisque;
+}
+
+.custom-final-btn:hover {
+    background-color: #d64161;
+    color: black;
+}

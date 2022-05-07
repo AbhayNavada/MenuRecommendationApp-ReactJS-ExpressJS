@@ -1,0 +1,44 @@
+.category-heading {
+    font-family: 'Merienda', cursive;
+    width: 90vw;
+    padding-top: 50px;
+    text-align: center;
+  }
+  
+  .slider {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    max-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
