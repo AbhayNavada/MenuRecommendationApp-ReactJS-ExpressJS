@@ -17,9 +17,6 @@ appetizerImages = [
     },
     {
         image: 'https://images.unsplash.com/photo-1611759650297-9fd869c36f61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGFwcGV0aXplcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60'
-    },
-    {
-        image: 'https://images.unsplash.com/photo-1501595091296-3aa970afb3ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGFwcGV0aXplcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60'
     }
 ]
 
@@ -33,9 +30,6 @@ sweetImages = [
     },
     {
         image: 'https://images.unsplash.com/photo-1585653621032-a5fec164ee92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHN3ZWV0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60'
-    },
-    {
-        image: 'https://images.unsplash.com/photo-1582486983320-12feb082b528?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fHN3ZWV0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60'
     }
 ]
 
@@ -49,9 +43,6 @@ softDrinkImages = [
     },
     {
         image: 'https://images.unsplash.com/photo-1603394461809-ecff477290da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTF8fHNvZnQlMjBkcmlua3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60'
-    },
-    {
-        image: 'https://images.unsplash.com/photo-1603833797131-3c0a18fcb6b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjZ8fHNvZnQlMjBkcmlua3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60'
     }
 ]
 
@@ -70,12 +61,13 @@ app.get('/softDrinkImages', (req, res) => {
     res.send(softDrinkImages);
 })
 
-//End-point which receives the uri of the clicked image from he frontend
+//End-point which receives the uri of the clicked image from the frontend
 app.get('/clickedImage', (req, res) => {
     console.log(req.query.uri)
     res.send('Image received');
 })
 
+//End-point which receives the user preferences from the frontend
 app.get('/userPreferences', (req, res) => {
     console.log(JSON.parse(req.query.prefs));
     res.send('User preferences received!');
